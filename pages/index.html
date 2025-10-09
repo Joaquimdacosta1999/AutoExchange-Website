@@ -22,24 +22,33 @@
     <meta name="twitter:description" content="Discover the best car deals on AutoExchange. Explore used and new cars for sale in South Africa.">
     <meta name="twitter:image" content="https://www.autoexchange.co.za/autoexchange-logo.png">
     <link rel="icon" type="image/x-icon" href="favicon.ico">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="../css/styles.css">
     <title>AutoExchange - Find Your Next Car</title>
 </head>
 <body>
-<header>
-    <div class="logo">
-        <img src="./49c8da43-3ebf-4759-8d67-2c0cada3238d.jpg" alt="AutoExchange Logo" class="logo-img">
-    </div>
+<header class="header" aria-label="Main navigation">
+        <a href="index.html" class="logo">
+          Auto<span class="logo-highlight">Exchange</span>
+        </a>
     <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
+         <ul>
+            <li class="dropdown">
+                <a href="#" class="dropbtn" id="buyCarBtn">
+                    Buy a car <span class="arrow">&#9662;</span>
+                </a>
+                <div class="dropdown-content" id="buyCarDropdown">
+                    <a href="used-cars.html">New & used cars for sale</a>
+                    <a href="new-cars.html">Find a dealer</a>
+                    <a href="certified.html">Certified Pre-Owned</a>
+                </div>
+            </li>
             <li><a href="used-cars.html">Used Cars</a></li>
             <li><a href="new-cars.html">New Cars</a></li>
             <li><a href="sell-car.html">Sell Your Car</a></li>
             <li><a href="finance.html">Finance</a></li>
             <li><a href="contact.html">Contact Us</a></li>
-        </ul>
     </nav>
 </header>
+<script src="../js/dropdown.js"></script>
 </body>
 </html>
