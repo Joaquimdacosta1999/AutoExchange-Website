@@ -5,18 +5,20 @@
 }
 body {
   font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
+  background-color: white;
 }
 
 .header {
    display: flex;
    justify-content: center;
     align-items: center;
-    background-color: #f4f4f4;
+    background-color: white;
     padding: 20px 0;
     height: 60px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     margin-top: 6px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
 }
 
 .logo {
@@ -24,7 +26,8 @@ body {
     font-weight: bold;
     color: #000;
     text-decoration: none;
-    margin-right: 40px;
+    margin-right: 3px;
+    padding-right: 20px;
 }
 
 .logo-highlight {
@@ -107,4 +110,94 @@ body {
   font-size: 14px;
   height: 35px;
   text-align: center;
+}
+
+
+.hero-content {
+  text-align: center;
+  padding: 60px 20px 20px 20px;
+  background-image: url("https://images.unsplash.com/photo-1683907994660-f8e9ede86386?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1170");
+  background-size: cover;
+  background-position: center;
+  background-position: center;
+  text-align: center;
+  color: white;
+  height: 500px;
+  width: 1400px;
+  margin: auto;
+  border-radius: 10px;
+  position: relative;
+}
+
+.hero-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 160px;
+  margin-right: 265px;
+}
+.hero-text h1 {
+  font-size: 38px;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.search-wrapper {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 800px;
+  margin: auto;
+  align-items: center;
+  margin-top: 20px;
+  padding: 16px;
+}
+
+.search-bar {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.car-dropdown {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 6px;
+  border: 1px solid white;
+  min-width: 100px;
+}
+
+.car-input {
+  flex: 1;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 6px;
+  border: 1px solid white;
+  min-width: 200px;
+}
+
+.filter-button {
+  background-color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  padding-left: 10px;
+  border-left: grey 2px solid;
+}
+
+
+.search-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.search-button:hover {
+  background-color: #0056b3;
 }
