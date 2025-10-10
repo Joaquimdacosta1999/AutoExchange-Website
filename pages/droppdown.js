@@ -11,4 +11,4 @@ document.addEventListener('click', function(e) {
     if (!btn.contains(e.target) && !dropdown.contains(e.target)) {
         dropdown.style.display = 'none';
     }
-});
+});// Toggle dropdown visibility
