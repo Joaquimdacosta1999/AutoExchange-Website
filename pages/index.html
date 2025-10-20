@@ -167,15 +167,20 @@
   </div>
 </section>
 
-<section class="calculator-container">
+<section class="calculator-wrapper">
+  <!-- Left Column -->
   <div class="calculator-left">
     <h2>Buy within your budget</h2>
     <p>Tell us how much you can afford, and we'll match you with quality cars at that price.</p>
-    <img src="https://images.unsplash.com/photo-1506015391300-4802dc74de2e?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1259" alt="Red SUV" />
+    <img src="./car-option.png" alt="Red SUV" />
   </div>
 
+  <!-- Right Column -->
   <div class="calculator-right">
-    <form class="calculator-form">
+    <form class="finance-form">
+      <h3>Estimated Buying Power</h3>
+      <p class="interest-note">Based on 10.5% interest</p>
+
       <div class="form-group">
         <label for="monthly-budget">Monthly Budget</label>
         <input type="number" id="monthly-budget" placeholder="R 0" />
@@ -185,19 +190,17 @@
         <label for="loan-term">Loan Term</label>
         <select id="loan-term">
           <option value="72">72 months</option>
-          <option value="60">60 months</option>
-          <option value="48">48 months</option>
         </select>
       </div>
 
       <div class="form-group">
+        <label for="deposit">Down Payment</label>
+        <input type="number" id="deposit" placeholder="R 35 000" />
+      </div>
+      <!--
+      <div class="form-group">
         <label for="trade-in">Trade-in Amount</label>
         <input type="number" id="trade-in" placeholder="R 0" />
-      </div>
-
-      <div class="form-group">
-        <label for="deposit">Deposit Amount</label>
-        <input type="number" id="deposit" placeholder="R 35 000" />
       </div>
 
       <div class="form-group">
@@ -206,24 +209,12 @@
           <option disabled selected>Select</option>
         </select>
       </div>
+    -->
 
       <div class="form-group">
         <label for="interest-rate">Interest Rate</label>
-        <input type="number" id="interest-rate" placeholder="10.50%" />
-      </div>
-
-      <div class="form-group">
-        <label for="credit-score">Credit Score</label>
-        <select id="credit-score">
-          <option value="good">Good credit</option>
-          <!-- Add more options -->
-        </select>
-      </div>
-
-      <div class="estimated-power">
-        <span class="label-new">New</span>
-        <p>Estimated buying power: <strong>R 0</strong></p>
-        <small>Based on 10.5% interest</small>
+        <input type="text" id="interest-rate" placeholder="10,50%" />
+        <small class="credit-note">Good credit</small>
       </div>
 
       <button type="submit" class="submit-button">See your matches</button>

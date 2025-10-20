@@ -333,17 +333,19 @@ body {
   text-decoration: underline;
 }
 
-
-.calculator-container {
+.calculator-wrapper {
   display: flex;
   flex-wrap: wrap;
   gap: 2rem;
-  padding: 2rem;
   background-color: white;
   border-radius: 12px;
+  margin-top: 170px;
+  margin-left: 100px;
+  margin-right: 100px;
 }
 
-.calculator-left {
+.calculator-left,
+.calculator-right {
   flex: 1;
   min-width: 300px;
 }
@@ -360,66 +362,68 @@ body {
 
 .calculator-left img {
   width: 100%;
-  max-width: 400px;
+  max-width: 700px;
   border-radius: 8px;
 }
 
-.calculator-right {
-  flex: 1;
-  min-width: 300px;
-}
-
-.calculator-form {
+.finance-form {
+  background-color: #fff;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  
+}
+
+.finance-form h3 {
+  font-size: 1.4rem;
+  margin-bottom: 0.3rem;
+}
+
+.interest-note {
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 1rem;
 }
 
 .form-group {
   display: flex;
   flex-direction: column;
-  border: 3px solid #f0f0f0;
 }
 
 .form-group label {
-  font-weight: bold;
+  font-weight: 600;
   margin-bottom: 0.3rem;
 }
 
 .form-group input,
 .form-group select {
   padding: 0.6rem;
+  font-size: 1rem;
   border: 1px solid #ccc;
   border-radius: 6px;
-  font-size: 1rem;
 }
 
-.estimated-power {
-  background-color: #eef6ff;
-  padding: 1rem;
-  border-radius: 8px;
-  text-align: center;
-}
-
-.label-new {
-  background-color: #007bff;
-  color: white;
-  padding: 0.3rem 0.6rem;
-  border-radius: 4px;
+.credit-note {
   font-size: 0.8rem;
-  display: inline-block;
-  margin-bottom: 0.5rem;
+  color: #007bff;
+  margin-top: 0.3rem;
+  text-align: center;
 }
 
 .submit-button {
   background-color: #007bff;
   color: white;
   padding: 0.8rem;
+  font-size: 1rem;
   border: none;
   border-radius: 6px;
-  font-size: 1rem;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  margin-left: 30px;
+  margin-right: 30px;
 }
 
 .submit-button:hover {
